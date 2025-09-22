@@ -1,11 +1,2 @@
-# See https://help.github.com/articles/about-codeowners/
-# for more info about CODEOWNERS file
-#
-# It uses the same pattern rule for gitignore file
-# https://git-scm.com/docs/gitignore#_pattern_format
-#
-
-#
-# For all file changes, github would automatically include the following people in the PRs.
-#
-* @microsoft/durabletask
+# These owners are the maintainers and approvers of this repo
+*       @dapr/maintainers-java-sdk @dapr/approvers-java-sdk
