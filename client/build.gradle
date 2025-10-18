@@ -25,7 +25,7 @@ dependencies {
     implementation "io.grpc:grpc-protobuf:${grpcVersion}"
     implementation "io.grpc:grpc-stub:${grpcVersion}"
     implementation 'com.google.protobuf:protobuf-java:3.25.5'
-    runtimeOnly "io.grpc:grpc-netty-shaded:${grpcVersion}"
+    runtimeOnly "io.grpc:grpc-netty:${grpcVersion}"
 
     compileOnly "org.apache.tomcat:annotations-api:6.0.53"
 
@@ -41,12 +41,12 @@ dependencies {
 
 
     // Netty dependencies for TLS
-    implementation "io.grpc:grpc-netty-shaded:${grpcVersion}"
+    implementation "io.grpc:grpc-netty:${grpcVersion}"
     implementation 'io.netty:netty-handler:4.1.119.Final'
     implementation "io.netty:netty-tcnative-boringssl-static:2.0.59.Final"
 
     // Add Netty dependencies to test classpath
-    testImplementation "io.grpc:grpc-netty-shaded:${grpcVersion}"
+    testImplementation "io.grpc:grpc-netty:${grpcVersion}"
     testImplementation 'io.netty:netty-handler:4.1.119.Final'
     testImplementation "io.netty:netty-tcnative-boringssl-static:2.0.59.Final"
 
